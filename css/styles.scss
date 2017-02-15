@@ -1,0 +1,120 @@
+/** Random Quote Generator
+/***Every time "New Quote" is pressed a new quote is /***generated and the two color background gradient is /***changed just for fun, but who knows, some interesting /***and professional looking gradients might appear.
+***/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=latin-ext');
+
+/* GLOBAL */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  background: linear-gradient(31deg, rgba(#00796B, .8), rgba(#FF5252, .8)), url("https://static.pexels.com/photos/26750/pexels-photo-26750.jpg")center center no-repeat;
+  background-attachment: scroll;
+  background-position: cover;
+}
+
+/* QUOTE RELATED CSS */
+
+.quote-wrapper {
+  background: #eee;
+  width: 800px;
+  margin: 2em auto 0;
+  padding: 4em 5em 2em;
+  border-radius: 5px;
+
+  span {
+    font-size: 0.75em;
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+.quote {
+  font-size: 1.875em;
+  padding-left: 40px;
+  position: relative;
+  height: 4em;
+
+  &::before {
+    display: block;
+    font-family: "FontAwesome";
+    content: "\f10d";
+    position: absolute;
+    left: 0;
+  }
+}
+
+.quote-author {
+  text-align: right;
+  font-size: .875em;
+  font-style: italic;
+  margin-bottom: 4em;
+}
+
+/* BOTTOM BUTTONS CSS */
+
+.tweet-btn {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+
+    &:hover {
+      background: #555;
+      border-radius: 5px;
+    }
+
+  }
+
+  i {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+}
+
+.new-quote {
+  display: inline-block;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  background: #222;
+  border-radius: 5px;
+  color: #fff;
+  float: right;
+
+  a {
+    background: #222;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+
+    &:hover,
+    &:active {
+      background: #555;
+      border-radius: 5px;
+  }
+  }
+}
+
+.random-color {
+  color: #222;
+  margin-top: 4em;
+}
+
+.pen-author {
+  text-shadow: 0 0 2px #000;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding: 10px;
+}
