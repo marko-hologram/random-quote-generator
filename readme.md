@@ -1,6 +1,6 @@
 # Random Quote Generator
 
-[DEMO (Codepen)](http://codepen.io/marko-hologram/full/ZBWeaa/)
+[DEMO (Codepen)](http://codepen.io/marko-hologram/full/ZBWeaa/) -- Currently doesn't work because of an invalid security certificate on the site that hosts the API
 
 Simple random quote generator with a simple twist. Every time a new quote is generated a new background gradient is also generated over the background image, just to give it some more personality. Despite using Bootstrap I didn't make it responsive yet, it was just a fun little learning project.
 
